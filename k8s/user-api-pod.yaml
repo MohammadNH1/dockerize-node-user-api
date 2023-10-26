@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: user-rest-api
+  labels:
+    app: user-rest-api
+spec:
+  containers:
+  - name: user-api-container
+    image: mohammadnh/user-api:version-2  # Replace this with your actual Node.js image
+    ports:
+    - containerPort: 5000  # Replace this with your actual port number

@@ -1,0 +1,30 @@
+# Ignore node_modules except the ones we need
+node_modules
+!node_modules/
+node_modules/**
+
+# Ignore logs
+logs
+*.log
+
+# Ignore any sensitive or private files
+.env
+
+# Ignore any build files or directories
+build
+dist
+
+# Ignore any development-related files
+.DS_Store
+.git
+.gitignore
+
+# Ignore any testing-related files or directories
+coverage
+.nyc_output
+
+# Ignore any editor-specific files or directories
+.vscode
+*.swp
+*.swo
+*.swn

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-rest-api-deployment
+spec:
+  replicas: 2  # Number of replicas you want
+  selector:
+    matchLabels:
+      app: user-rest-api
+  template:
+    metadata:
+      labels:
+        app: user-rest-api
+    spec:
+      containers:
+      - name: user-api-container
+        image: mohammadnh/user-api:version-2  # Replace this with your actual image
+        ports:
+        - containerPort: 5000  # Replace this with your application's port
+        
